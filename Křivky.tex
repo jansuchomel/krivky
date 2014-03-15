@@ -1,0 +1,86 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[czech]{babel}
+\usepackage{a4wide}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{xcolor}
+\usepackage{color}
+\usepackage{cancel}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{wrapfig}
+\usepackage{float}
+
+\graphicspath{ {img/} }
+
+
+\setlength{\headheight}{11pt}
+\pagestyle{fancy}
+\definecolor{namecolor}{cmyk}{1,.50,0,.10}
+\titleformat{\chapter}[hang]{\bfseries\huge}{\thechapter.}{2pc}{}
+\hypersetup{%
+  colorlinks=true,
+  linkcolor=[rgb]{0,0.5,0.5}
+}
+
+\begin{document}
+\begin{titlepage}
+	\noindent{\Huge \textsf{Parametrický popis křivek}} \\
+	\noindent \makebox[0pt][l]{\rule{1.5\textwidth}{1pt}} \\
+	\noindent\textbf{\textsf{Jan Suchomel}} \textcolor{namecolor}{\textsf{Smíchovská střední průmyslová škola}} \\
+	\noindent\textsf{Maturitní práce} \textcolor{namecolor}{\textsf{2013/2014}} \\[15pt]
+	\textsf{Garant: Mgr. Zbyšek Nechanický} \\
+	\textsf{Konzultanti: RNDr. Alena Rybáková a RNDr. Vladimíra Hájková, Ph.D.}
+	\vfill
+	\begin{center}
+		\includegraphics[width = 400pt]{img/viviani-obalka.eps}
+	\end{center}
+	\vfill
+	\includegraphics[height = 35pt]{img/logo_cvut.eps} \hfill \includegraphics[height = 35pt]{img/oppa.eps}
+\end{titlepage}
+	
+\setcounter{tocdepth}{1}
+\tableofcontents
+	
+\input{./tex/kapitola1.tex}
+\input{./tex/kapitola2.tex}
+\input{./tex/kapitola3.tex}
+\input{./tex/kapitola4.tex}
+\input{./tex/kapitola5.tex}
+\input{./tex/kapitola6.tex}
+\input{./tex/kapitola7.tex}
+	
+\begin{thebibliography}{99}
+	\raggedright
+	\bibitem{fyz}
+	Miroslava Jarešová, Ivo Volf,
+	\textit{Matematika křivek}.
+	http://fyzikalniolympiada.cz/texty/matematika/mkrivek.pdf
+	\bibitem{history}
+	http://www-history.mcs.st-andrews.ac.uk/Curves/Curves.html
+	\bibitem{plz}
+	F. Ježek, 
+	\textit{Numerické a geometrické modelování (kapitola Popis křivek a ploch pro geometrické modelování)}.
+	září 2005
+	http://geometrie.kma.zcu.cz/index.php/www/content/download/299/856/file/ngm-all-FJ.pdf
+	\bibitem{vscht}
+	http://www.vscht.cz/mat/El\_pom/sbirka/Kapitola6.pdf
+	\bibitem{mw}
+	Weisstein, Eric W.,
+	\textit{Singular Point}.
+	http://mathworld.wolfram.com/SingularPoint.html 
+	\bibitem{cur}
+	http://www.cs.iastate.edu/~cs577/handouts/curves.pdf
+	\bibitem{cur2}
+	http://facstaff.bloomu.edu/skokoska/curves.pdf
+	\bibitem{cal}
+	http://cims.nyu.edu/$\sim$kiryl/teaching/c1
+\end{thebibliography}
+\end{document}
